@@ -5,6 +5,7 @@ class UPadrao
 {
 protected:
     /* data */
+    int userId;
 public:
     UPadrao(/* args */);
     ~UPadrao();
