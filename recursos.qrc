@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>Imagens/imagem_muscleband.png</file>
+    </qresource>
+</RCC>
