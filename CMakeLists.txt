@@ -29,6 +29,30 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         janela_menu_inicial.h janela_menu_inicial.cpp janela_menu_inicial.ui
         janela_perfil_usuario.h janela_perfil_usuario.cpp janela_perfil_usuario.ui
         janela_dieta_usuario.h janela_dieta_usuario.cpp janela_dieta_usuario.ui
+        conexao.h conexao.cpp
+        janela_primeiro_login.h janela_primeiro_login.cpp janela_primeiro_login.ui
+        janela_criar_upadrao.h janela_criar_upadrao.cpp janela_criar_upadrao.ui
+
+        janela_menu_nutricionista.h janela_menu_nutricionista.cpp janela_menu_nutricionista.ui
+        janela_menu_personal.h janela_menu_personal.cpp janela_menu_personal.ui
+        janela_criar_uprofissional.h janela_criar_uprofissional.cpp janela_criar_uprofissional.ui
+        janela_editar_dieta.h janela_editar_dieta.cpp janela_editar_dieta.ui
+        janela_adiciona_prato.h janela_adiciona_prato.cpp janela_adiciona_prato.ui
+        janela_editar_treino.h janela_editar_treino.cpp janela_editar_treino.ui
+        janela_adiciona_atividade.h janela_adiciona_atividade.cpp janela_adiciona_atividade.ui
+        janela_treino_usuario.h janela_treino_usuario.cpp janela_treino_usuario.ui
+        janela_profissional_usuario.h janela_profissional_usuario.cpp janela_profissional_usuario.ui
+        usuario.h usuario.cpp
+        usuario_padrao.h usuario_padrao.cpp
+        janela_entrar_competicao.h janela_entrar_competicao.cpp janela_entrar_competicao.ui
+        janela_ve_competicoes.h janela_ve_competicoes.cpp janela_ve_competicoes.ui
+        janela_competicao.h janela_competicao.cpp janela_competicao.ui
+        competicao.h competicao.cpp
+        janela_checkins.h janela_checkins.cpp janela_checkins.ui
+        Message_Style.h
+
+
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET TFinal APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

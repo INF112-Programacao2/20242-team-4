@@ -1,37 +1,32 @@
 #include "janela_inicial.h"
+#include "conexao.h"
 
 #include <QApplication>
-
-#include <QtSql/QSqlDatabase>
-#include <QtSql/QSqlQuery>
-#include <QtSql/QSqlError>
-#include <QDebug>
-#include <QFileInfo>
-#include <QMessageBox>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    QSqlDatabase BancoDeDados = QSqlDatabase::addDatabase("QSQLITE");
+    Conexao* conexao = Conexao::getInstance();
 
-    BancoDeDados.setDatabaseName("C:/Users/mario/Documents/TFinal/BD/bd.db");
-
-    QFileInfo checkFile("C:/Users/mario/Documents/TFinal/BD/bd.db");
-    if (checkFile.exists() && checkFile.isFile()) {
-        qDebug() << "Arquivo do banco de dados existe";
-    } else {
-        qDebug() << "Arquivo do banco de dados NÃO existe";
+    if (!conexao->abrir()){
+        qDebug() << "Erro ao localizar o banco de dados";
+        return -1;
     }
+
+    QSqlDatabase BancoDeDados = conexao->getConexao();
 
     if (!BancoDeDados.open()) {
         qDebug() << "Erro ao abrir o banco de dados";
-        qDebug() << "Erro:" << BancoDeDados.lastError().text();  // Adicione esta linha
+        qDebug() << "Erro:" << BancoDeDados.lastError().text();
+        return -1;
     } else {
         qDebug() << "Banco de dados aberto com sucesso!";
     }
 
     janela_inicial w;
     w.show();
+
+    Conexao::destroyInstance();
     return a.exec();
 }

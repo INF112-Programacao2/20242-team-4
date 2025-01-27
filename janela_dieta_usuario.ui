@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>555</width>
-    <height>455</height>
+    <width>528</width>
+    <height>595</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,20 +15,52 @@
   </property>
   <property name="styleSheet">
    <string notr="true">*{
-	background: #4A90E2;
+	background-color: #4A90E2;
 }
 
 QLabel{
 	font-family: &quot;Segoe UI&quot;;
-	font-weight: bold;
-	font-size: 18px;
+	font-size: 16px;
     color: #fff;
+}
+
+#_txt_dieta{
+	font-size: 26px;
+	font-weight: bold;
+}
+
+#_txt_cafedamanha{
+	font-weight: bold;
+}
+
+#_txt_lanchedamanha{
+	font-weight: bold;
+}
+
+#_txt_almoco{
+	font-weight: bold;
+}
+
+#_txt_lanchedatarde{
+	font-weight: bold;
+}
+
+#_txt_jantar{
+	font-weight: bold;
+}
+
+#_txt_ceia{
+	font-weight: bold;
+}
+
+#_txt_comentario{
+	font-weight: bold;
 }
 
 QPushButton{
     background: #4A90E2;
     border: 2px solid #fff;
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 10px 20px;
 
 	font-family: &quot;Segoe UI&quot;;
@@ -40,17 +72,17 @@ QPushButton{
 QPushButton:hover{
     background: #53A3FF;
     border: 2px solid #fff;
-    border-radius: 12px;
+    border-radius: 10px;
     padding: 10px 20px;
 }
 
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="_txt_dieta">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>10</y>
       <width>171</width>
       <height>21</height>
@@ -60,19 +92,254 @@ QPushButton:hover{
      <string>Minha dieta:</string>
     </property>
    </widget>
+   <widget class="QLabel" name="_txt_jantar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Jantar:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_voltar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Voltar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_ceia">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ceia:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_lanchedamanha_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>500</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_lanchedamanha">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lanche da manhã:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_almoco_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>500</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_comentario">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>410</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Observações:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_lanchedatarde">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>230</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lanche da tarde:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_almoco">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Almoço:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_cafedamanha_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>500</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_ceia_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>370</y>
+      <width>500</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_cafedamanha">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Café da manhã:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_jantar_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>500</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_lanchedatarde_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>500</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_comentario_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>440</y>
+      <width>500</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="recursos.qrc">:/img/Imagens/imagem_food.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_nutricionista">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>500</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Nutricionista</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>555</width>
+     <width>528</width>
      <height>21</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -1,17 +1,14 @@
 #ifndef JANELA_LOGIN_H
 #define JANELA_LOGIN_H
 
+#include "conexao.h"
 #include <QDialog>
-
-#include <QtSql/QSqlDatabase>
-#include <QtSql/QSqlQuery>
-#include <QtSql/QSqlError>
-#include <QDebug>
-#include <QFileInfo>
-#include <QMessageBox>
 
 #include "janela_cadastro.h"
 #include "janela_menu_inicial.h"
+#include "janela_menu_nutricionista.h"
+#include "janela_menu_personal.h"
+#include "janela_primeiro_login.h"
 
 namespace Ui {
 class janela_login;
@@ -36,6 +33,14 @@ private:
     janela_cadastro *cadastro;
 
     janela_menu_inicial *menu_incial;
+
+    janela_primeiro_login *primeiro_login;
+
+    janela_menu_nutricionista *menu_nutricionista;
+
+    janela_menu_personal *menu_personal;
+
+    Conexao* conexao;
 };
 
 #endif // JANELA_LOGIN_H

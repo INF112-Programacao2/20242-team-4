@@ -18,6 +18,14 @@
 	background: #4A90E2;
 }
 
+QMenuBar{
+	background: #4A90E2;
+
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 15px;
+    color: #fff;
+}
+
 #_txt_titulo{
 	font-family: &quot;Segoe UI&quot;;
 	font-weight: bold;
@@ -320,7 +328,7 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

@@ -2,13 +2,15 @@
 #define JANELA_CADASTRO_H
 
 #include <QMainWindow>
-
 #include <QtSql/QSqlDatabase>
 #include <QtSql/QSqlQuery>
 #include <QtSql/QSqlError>
 #include <QDebug>
 #include <QFileInfo>
 #include <QMessageBox>
+
+#include "conexao.h"
+#include "usuario.h"
 
 namespace Ui {
 class janela_cadastro;
@@ -27,6 +29,8 @@ private slots:
 
 private:
     Ui::janela_cadastro *ui;
+
+    Conexao* conexao;
 
 signals:
     void voltarLogin();

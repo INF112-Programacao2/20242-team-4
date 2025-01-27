@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "conexao.h"
+
 namespace Ui {
 class janela_perfil_usuario;
 }
@@ -15,8 +17,22 @@ public:
     explicit janela_perfil_usuario(QWidget *parent = nullptr);
     ~janela_perfil_usuario();
 
+    void setUserId(int id);
+
+private slots:
+    void on__btn_voltar_clicked();
+
+    void on__btn_editar_clicked();
+
 private:
     Ui::janela_perfil_usuario *ui;
+
+    int _user_id;
+
+    Conexao* conexao;
+
+signals:
+    void voltarMenuInicial();
 };
 
 #endif // JANELA_PERFIL_USUARIO_H

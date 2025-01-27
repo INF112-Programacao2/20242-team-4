@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>janela_profissional_usuario</class>
+ <widget class="QMainWindow" name="janela_profissional_usuario">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>378</width>
+    <height>174</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	background: #4A90E2;
+}
+
+QLabel{
+	font-family: &quot;Segoe UI&quot;;
+	font-weight: bold;
+	font-size: 18px;
+    color: #fff;
+}
+
+#_txt_titulo{
+	font-size: 20px;
+}
+
+QPushButton{
+    background: #4A90E2;
+    border: 2px solid #fff;
+    border-radius: 14px;
+    padding: 10px 20px;
+
+	font-family: &quot;Segoe UI&quot;;
+	font-weight: bold;
+	font-size: 18px;
+    color: #fff;
+}
+
+QPushButton:hover{
+    background: #53A3FF;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+QComboBox {
+    background: #ffffff;
+    border: 2px solid #4A90E2;
+    border-radius: 8px;
+    padding: 5px 10px;
+
+    font-family: &quot;Segoe UI&quot;;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333333;
+}
+
+QComboBox:focus {
+    border-color: #53A3FF;
+    background: #E6F7FF;
+}
+
+QComboBox:disabled {
+    background: #f0f0f0;
+    border: 2px solid #cccccc;
+    color: #999999;
+}
+
+/* Estilizando a seta do QComboBox */
+QComboBox::drop-down {
+    border: none;
+    width: 25px;
+}
+
+QComboBox::down-arrow {
+    image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADJ+H49AAAAG0lEQVR42mJk+M8ABkmEYGBg+P///zCABQBVcgQCPh8pRgAAAABJRU5ErkJggg==); /* Uma seta simples, você pode ajustar */
+    width: 10px;
+    height: 10px;
+}
+
+/* Estilizando a lista suspensa */
+QComboBox QAbstractItemView {
+    background: #ffffff;
+    border: 1px solid #4A90E2;
+    selection-background-color: #E6F7FF;
+    selection-color: #333333;
+
+    font-family: &quot;Segoe UI&quot;;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333333;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="_txt_titulo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Profissional</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="_cb_nome">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>361</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Nome</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_salvar">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Salvar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_voltar">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>90</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Voltar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>378</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
