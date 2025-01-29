@@ -10,5 +10,5 @@ Nosso objetivo é desenvolver um aplicativo utilizando os conceitos de P.O.O. ap
 A competição ocorre por meio de check-ins, que correspondem às fotos de cada atividade física e aos seus níveis de dificuldade. Quanto maior o nível, menor a pontuação.
 Além disso, pelo app, é possível acessar sua ficha de treinamentos e sua dieta, uma vez que você pode se associar aos profissionais de saúde que também criarem contas.
 
-Para utilizar o APP, será necessario...
+Para utilizar o APP, será necessario entrar no link do instalador e então baixa-lo e executar o .exe da pasta, simples :D
 
