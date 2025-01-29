@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>janela_menu_inicial</class>
+ <widget class="QMainWindow" name="janela_menu_inicial">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>668</width>
+    <height>454</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	background: #4A90E2;
+}
+
+#_frame {
+	background: #FFFFFF;
+}
+
+#_txt_titulo {
+	font-size: 40px;
+}
+
+#_txt_nome {
+	font-size: 36px;
+}
+
+QLabel{
+	font-family: &quot;Segoe UI&quot;;
+	font-weight: bold;
+	font-size: 18px;
+    color: #fff;
+}
+
+QPushButton{
+    background: #4A90E2;
+    border: 2px solid #fff;
+    border-radius: 14px;
+    padding: 10px 20px;
+
+	font-family: &quot;Segoe UI&quot;;
+	font-weight: bold;
+	font-size: 18px;
+    color: #fff;
+}
+
+QPushButton:hover{
+    background: #53A3FF;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="_txt_titulo">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>331</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Seja BEM VINDO</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_go_competicao">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>230</y>
+      <width>51</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="recursos.qrc">
+      <normaloff>:/img/Imagens/imagem_plus.png</normaloff>:/img/Imagens/imagem_plus.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_participac">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>230</y>
+      <width>248</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Participe de uma competição</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_nome">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>80</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nome do Usuário</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_my_competicao">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>300</y>
+      <width>321</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Minhas Competições</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_checkin">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>330</y>
+      <width>133</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string> Check-in</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_perfil">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>133</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Perfil</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>230</y>
+      <width>45</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="recursos.qrc">:/img/Imagens/imagem_bodybuilding.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>130</y>
+      <width>45</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="recursos.qrc">:/img/Imagens/imagem_food.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>30</y>
+      <width>45</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="recursos.qrc">:/img/Imagens/imagem_user.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>330</y>
+      <width>45</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="recursos.qrc">:/img/Imagens/imagem_check.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_dieta">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>133</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Dieta</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_treino">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>133</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>Treino</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="_frame">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>20</y>
+      <width>20</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>668</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

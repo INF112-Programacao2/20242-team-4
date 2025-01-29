@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>janela_competicao</class>
+ <widget class="QMainWindow" name="janela_competicao">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>512</width>
+    <height>528</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	background-color: #4A90E2;
+}
+
+QLabel{
+	font-family: &quot;Segoe UI&quot;;
+	font-weight: bold;
+	font-size: 18px;
+    color: #fff;
+}
+
+#_txt_titulo{
+	font-size: 26px;
+}
+
+QLineEdit{
+    background: #ffffff;
+    border: 2px solid #4A90E2;
+    border-radius: 8px;
+    padding: 5px 10px;
+
+    font-family: &quot;Segoe UI&quot;;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333333;
+}
+
+QLineEdit:focus{
+    border-color: #53A3FF;
+    background: #E6F7FF; 
+}
+
+QLineEdit:disabled {
+    background: #f0f0f0;
+    border: 2px solid #cccccc;
+    color: #999999;
+}
+
+QPushButton{
+    background: #4A90E2;
+    border: 2px solid #fff;
+    border-radius: 14px;
+    padding: 10px 20px;
+
+	font-family: &quot;Segoe UI&quot;;
+	font-weight: bold;
+	font-size: 18px;
+    color: #fff;
+}
+
+QPushButton:hover{
+    background: #53A3FF;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+QTableWidget {
+    background-color: #ffffff; 	/* Define a cor de fundo do QTableWidget como branco */
+    border-radius: 12px; /* Arredonda os cantos do QTableWidget em 8px */
+    gridline-color: #cccccc; /* Define a cor das linhas da grade no QTableWidget */
+    font-family: &quot;Segoe UI&quot;; /* Define a fonte do texto no QTableWidget */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    font-size: 16px; /* Define o tamanho da fonte como 16px */
+    color: #333333; /* Define a cor do texto como cinza escuro */
+}
+
+QTableWidget::item {
+    border: none; /* Remove as bordas dos itens individuais no QTableWidget */
+    font-family: &quot;Segoe UI&quot;; /* Define a fonte do texto dos itens */
+    font-size: 18px; /* Define o tamanho da fonte dos itens como 16px */
+    color: #333333; /* Define a cor do texto dos itens como cinza escuro */
+}
+
+QTableWidget::item:selected {
+    background-color: #4A90E2; /* Define a cor de fundo do item selecionado como azul */
+    color: #ffffff; /* Define a cor do texto do item selecionado como branco */
+}
+
+QHeaderView::section {
+    background-color: #4A90E2; /* Define a cor de fundo das seções do cabeçalho como azul */
+    border: 1px solid #ffffff; /* Adiciona uma borda branca de 1px ao redor das seções do cabeçalho */
+    font-family: &quot;Segoe UI&quot;; /* Define a fonte do texto do cabeçalho */
+    font-size: 16px; /* Define o tamanho da fonte do cabeçalho como 16px */
+    color: #ffffff; /* Define a cor do texto do cabeçalho como branco */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+}
+
+QHeaderView::section:hover {
+    background-color: #53A3FF; /* Altera a cor de fundo da seção do cabeçalho ao passar o mouse */
+}
+
+QHeaderView {
+    background-color: #4A90E2; /* Define a cor de fundo geral do QHeaderView como azul */
+    border: none; /* Remove as bordas do QHeaderView */
+    font-family: &quot;Segoe UI&quot;; /* Define a fonte do texto no QHeaderView */
+    font-weight: bold; /* Define o texto como negrito */
+    font-size: 16px; /* Define o tamanho da fonte no QHeaderView como 16px */
+    color: #ffffff; /* Define a cor do texto no QHeaderView como branco */
+}
+
+QTableCornerButton::section {
+    background-color: #4A90E2; /* Define a cor de fundo do botão no canto superior esquerdo da tabela como azul */
+    border: 1px solid #ffffff; /* Adiciona uma borda branca de 1px ao botão do canto */
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="_tw_ranking">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>491</width>
+      <height>381</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_titulo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nome da tabela:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_voltar">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>440</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Voltar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>512</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

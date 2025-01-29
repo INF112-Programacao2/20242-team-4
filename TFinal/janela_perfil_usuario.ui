@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>janela_perfil_usuario</class>
+ <widget class="QMainWindow" name="janela_perfil_usuario">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>403</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	background: #4A90E2;
+}
+
+QLabel{
+	font-family: &quot;Segoe UI&quot;;
+	font-weight: bold;
+	font-size: 18px;
+    color: #fff;
+}
+
+#_txt_titulo {
+	font-size: 40px;	
+}
+
+QPushButton{
+    background: #4A90E2;
+    border: 2px solid #fff;
+    border-radius: 14px;
+    padding: 10px 20px;
+
+	font-family: &quot;Segoe UI&quot;;
+	font-weight: bold;
+	font-size: 18px;
+    color: #fff;
+}
+
+QPushButton:hover{
+    background: #53A3FF;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="_txt_titulo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Perfil</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_nome">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>71</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nome:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_idade">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>81</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Idade:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_peso">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>120</y>
+      <width>81</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Peso:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_altura">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>120</y>
+      <width>81</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Altura:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_nome_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>371</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_ndecheckins">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>161</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>N° de Check-in's:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_checkins_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_ndiasativos">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>190</y>
+      <width>161</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>N° de dias ativos:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_ndiasativos_user">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>220</y>
+      <width>131</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_personalr">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>330</y>
+      <width>201</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Personal Responsável:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_nutricionistar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>231</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nutricionista Responsável:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_personal_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>360</y>
+      <width>351</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_nutricionista_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>361</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_idade_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>91</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_peso_user">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>150</y>
+      <width>91</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_altura_user">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>150</y>
+      <width>91</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="txt_imagem">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="recursos.qrc">:/img/Imagens/imagem_user.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_voltar">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>470</y>
+      <width>170</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Voltar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="_btn_editar">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>470</y>
+      <width>170</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Editar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_objetivo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Objetivo:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="_txt_objetivo_user">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <zorder>_txt_titulo</zorder>
+   <zorder>_txt_nome</zorder>
+   <zorder>_txt_idade</zorder>
+   <zorder>_txt_peso</zorder>
+   <zorder>_txt_altura</zorder>
+   <zorder>_txt_nome_user</zorder>
+   <zorder>_txt_ndecheckins</zorder>
+   <zorder>_txt_ndiasativos</zorder>
+   <zorder>_txt_personalr</zorder>
+   <zorder>_txt_nutricionistar</zorder>
+   <zorder>_txt_nutricionista_user</zorder>
+   <zorder>txt_imagem</zorder>
+   <zorder>_txt_altura_user</zorder>
+   <zorder>_txt_checkins_user</zorder>
+   <zorder>_txt_ndiasativos_user</zorder>
+   <zorder>_txt_personal_user</zorder>
+   <zorder>_btn_voltar</zorder>
+   <zorder>_btn_editar</zorder>
+   <zorder>_txt_idade_user</zorder>
+   <zorder>_txt_peso_user</zorder>
+   <zorder>_txt_objetivo</zorder>
+   <zorder>_txt_objetivo_user</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>403</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
